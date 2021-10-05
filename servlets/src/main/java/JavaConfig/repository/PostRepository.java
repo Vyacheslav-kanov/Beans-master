@@ -1,13 +1,12 @@
-package ru.netology.repository;
+package JavaConfig.repository;
 
+import JavaConfig.model.Post;
 import org.springframework.stereotype.Repository;
-import ru.netology.model.Post;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
 public final class PostRepository {
   private final List<Post> list = new ArrayList<>();
   private int counterByListId = 1;
