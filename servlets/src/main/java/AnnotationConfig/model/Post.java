@@ -1,4 +1,4 @@
-package ru.netology.model;
+package AnnotationConfig.model;
 
 public class Post {
   private long id;

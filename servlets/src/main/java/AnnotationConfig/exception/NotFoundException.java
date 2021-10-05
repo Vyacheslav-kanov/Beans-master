@@ -1,4 +1,4 @@
-package ru.netology.exception;
+package AnnotationConfig.exception;
 
 public class NotFoundException extends RuntimeException {
   public NotFoundException() {
