@@ -1,9 +1,9 @@
-package ru.netology.controller;
+package AnnotationConfig.controller;
 
 import com.google.gson.Gson;
 import org.springframework.stereotype.Controller;
-import ru.netology.model.Post;
-import ru.netology.service.PostService;
+import AnnotationConfig.model.Post;
+import AnnotationConfig.service.PostService;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

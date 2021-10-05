@@ -1,9 +1,9 @@
-package ru.netology.service;
+package AnnotationConfig.service;
 
 import org.springframework.stereotype.Service;
-import ru.netology.exception.NotFoundException;
-import ru.netology.model.Post;
-import ru.netology.repository.PostRepository;
+import AnnotationConfig.exception.NotFoundException;
+import AnnotationConfig.model.Post;
+import AnnotationConfig.repository.PostRepository;
 
 import java.util.List;
 

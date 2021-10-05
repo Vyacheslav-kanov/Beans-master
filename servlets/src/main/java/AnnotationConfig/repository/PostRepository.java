@@ -1,7 +1,7 @@
-package ru.netology.repository;
+package AnnotationConfig.repository;
 
 import org.springframework.stereotype.Repository;
-import ru.netology.model.Post;
+import AnnotationConfig.model.Post;
 
 import java.util.ArrayList;
 import java.util.List;

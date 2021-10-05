@@ -1,7 +1,8 @@
-package ru.netology.servlet;
+package AnnotationConfig.servlet;
+import AnnotationConfig.repository.PostRepository;
+import AnnotationConfig.service.PostService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.netology.controller.PostController;
-import ru.netology.service.PostService;
+import AnnotationConfig.controller.PostController;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,10 +13,11 @@ public class MainServlet extends HttpServlet {
 
   @Override
   public void init() {
-    final var context = new AnnotationConfigApplicationContext(JavaConfig.class);
-    final var repository = context.getBean("postRepository");
-    final var service = context.getBean("postService");
-    controller = new PostController((PostService) service);
+    final var context = new AnnotationConfigApplicationContext("AnnotationConfig");
+    final var repository = context.getBean(PostRepository.class);
+    final var service = context.getBean(PostService.class);
+    final var controllerBean = context.getBean(PostController.class);
+    controller = controllerBean;
   }
 
   @Override
